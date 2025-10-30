@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>VetNova — Adopciones</title>
+  <link rel="stylesheet" href="style.css" />
+  <script defer src="script.js"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700;800&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header class="navbar transparente" id="navbar-adopt">
+    <div class="nav-inner container">
+      <div class="logo">
+        <img src="logovet.png" alt="VetNova Logo" class="logo-img">
+        <h1 class="logo-text">VetNova</h1>
+      </div>
+
+      <button class="nav-toggle" id="navToggle4" aria-label="Abrir menú">☰</button>
+
+      <nav class="nav" id="nav4">
+        <ul class="nav-links">
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="servicios.html">Servicios</a></li>
+          <li><a href="equipo.html">Equipo</a></li>
+          <li><a href="adopciones.html" class="active">Adopciones</a></li>
+          <li class="dropdown">
+            <button class="drop-btn" aria-haspopup="true" aria-expanded="false">Más ▾</button>
+            <ul class="dropdown-menu">
+              <li><a href="postulaciones.html">Trabaja con nosotros</a></li>
+              <li><a href="preguntas.html">Preguntas frecuentes</a></li>
+            </ul>
+          </li>
+          <li><a href="contacto.html" class="btn-contacto">Contacto</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero hero-short">
+      <div class="hero-overlay"></div>
+      <div class="hero-inner container">
+        <h2 class="hero-title">Adopciones</h2>
+        <p class="hero-sub">Conoce a los peluditos que buscan un hogar ❤</p>
+      </div>
+    </section>
+
+    <section class="adopciones container">
+      <h2 class="section-title">Amigos en adopción</h2>
+      <p class="muted" style="text-align:center; max-width:900px; margin:0.5rem auto 2rem;">
+        Todos los animales tienen ficha sanitaria y vacunas al día. Haz click en la tarjeta para ver la ficha completa.
+      </p>
+
+      <div class="adopciones-grid" id="adopcionesGrid">
+        <!-- Tarjetas: reemplaza imágenes por tus ficheros en /img -->
+        <article class="card adopcion-card" data-nombre="Max" data-edad="3 años" data-descripcion="Juguetón, sociable con niños. Esterilizado y vacunado." role="button" tabindex="0">
+          <img src="https://th.bing.com/th/id/R.38a8dadd3ac60df514e01facd7fff21a?rik=uBADyv2n91n64w&riu=http%3a%2f%2f4.bp.blogspot.com%2f-ErdC4eQ22rc%2fUYknGiJ2KAI%2fAAAAAAAAJWI%2fApzt6-Ha7t8%2fs320%2fPERROS-7.jpg&ehk=smO5k%2bPNRN6blOXzbzL6kB1RGV6N1PiC3Ex4aAQ7%2bT8%3d&risl=&pid=ImgRaw&r=0" alt="Max" class="card-img">
+          <div class="card-body">
+            <h3>Max</h3>
+            <p class="muted">3 años · Muy activo</p>
+            <button class="btn small btn-detalle">Ver ficha</button>
+          </div>
+        </article>
+
+        <article class="card adopcion-card" data-nombre="Luna" data-edad="2 años" data-descripcion="Tranquila y cariñosa. Prefiere hogar calmado. Esterilizada y vacunada." role="button" tabindex="0">
+          <img src="https://www.homecenter.com.co/static/landing/guiasdecompra/Guias_de_compra_2/img/como-saber-si-es-gata-o-gato-sin-temor-a-equivocarte/como-saber-si-es-gata-o-gato-sin-temor-a-equivocarte-r.jpg" alt="Luna" class="card-img">
+          <div class="card-body">
+            <h3>Luna</h3>
+            <p class="muted">2 años · Calmado</p>
+            <button class="btn small btn-detalle">Ver ficha</button>
+          </div>
+        </article>
+
+        <article class="card adopcion-card" data-nombre="Tommy" data-edad="1 año" data-descripcion="Enérgico y curioso. Necesita un hogar con espacio para jugar." role="button" tabindex="0">
+          <img src="https://media.airedesantafe.com.ar/p/ed3694b67e17a59762ab0f3495eb4dd0/adjuntos/268/imagenes/002/065/0002065018/gatitojpg.jpg" alt="Tommy" class="card-img">
+          <div class="card-body">
+            <h3>Tommy</h3>
+            <p class="muted">1 año · Muy juguetón</p>
+            <button class="btn small btn-detalle">Ver ficha</button>
+          </div>
+        </article>
+
+        <!-- Puedes añadir más tarjetas idénticas -->
+      </div>
+    </section>
+  </main>
+
+  <!-- MODAL -->
+  <div class="modal hidden" id="modalAdopcion" role="dialog" aria-hidden="true" aria-labelledby="modalNombre">
+    <div class="modal-wrap" role="document">
+      <button class="modal-close" id="modalClose" aria-label="Cerrar">×</button>
+      <div class="modal-body grid-two">
+        <img id="modalImg" src="img/adopt_placeholder.jpg" alt="Foto animal">
+        <div class="modal-info">
+          <h3 id="modalNombre">Nombre</h3>
+          <p id="modalEdad" class="muted">Edad</p>
+          <p id="modalDescripcion">Descripción</p>
+          <div style="margin-top:1rem;">
+            <a id="modalContacto" class="btn primary" href="contacto.html">Contactar para adoptar</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer class="footer">
+    <div class="container footer-inner">
+      <div>
+        <strong>© 2025 VetNova — Cuidamos lo que más amas 🐾</strong>
+        <p>Av. Principal #123 — Tel: +57 312 456 7890</p>
+      </div>
+      <div class="footer-links">
+        <a href="#">Instagram</a>
+        <a href="#">Facebook</a>
+        <a href="#">TikTok</a>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>

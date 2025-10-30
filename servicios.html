@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>VetNova — Servicios</title>
+  <link rel="stylesheet" href="style.css" />
+  <script defer src="script.js"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700;800&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+  <!-- Reutiliza la misma navbar -->
+  <header class="navbar transparente" id="navbar-secondary">
+    <div class="nav-inner container">
+      <div class="logo">
+        <img src="logovet.png" alt="VetNova Logo" class="logo-img">
+        <h1 class="logo-text">VetNova</h1>
+      </div>
+
+      <button class="nav-toggle" id="navToggle2" aria-label="Abrir menú">☰</button>
+
+      <nav class="nav" id="nav2">
+        <ul class="nav-links">
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="servicios.html" class="active">Servicios</a></li>
+          <li><a href="equipo.html">Equipo</a></li>
+          <li><a href="adopciones.html">Adopciones</a></li>
+          <li class="dropdown">
+            <button class="drop-btn" aria-haspopup="true" aria-expanded="false">Más ▾</button>
+            <ul class="dropdown-menu">
+              <li><a href="postulaciones.html">Trabaja con nosotros</a></li>
+              <li><a href="preguntas.html">Preguntas frecuentes</a></li>
+            </ul>
+          </li>
+          <li><a href="contacto.html" class="btn-contacto">Contacto</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero hero-short">
+      <div class="hero-overlay"></div>
+      <div class="hero-inner container">
+        <h2 class="hero-title">Servicios Veterinarios</h2>
+        <p class="hero-sub">Conoce todo lo que VetNova ofrece para tu mascota.</p>
+      </div>
+    </section>
+
+    <section class="servicios container">
+      <h2 class="section-title">Nuestros Servicios</h2>
+      <div class="servicios-grid">
+        <div class="card">
+          <h3>Consultas médicas</h3>
+          <p>Diagnóstico profesional y atención personalizada.</p>
+        </div>
+
+        <div class="card">
+          <h3>Vacunación</h3>
+          <p>Protección completa con calendario actualizado.</p>
+        </div>
+
+        <div class="card">
+          <h3>Cirugías</h3>
+          <p>Quirófanos equipados y monitoreo postoperatorio.</p>
+        </div>
+
+        <div class="card">
+          <h3>Peluquería</h3>
+          <p>Baño y estética para el bienestar de tu mascota.</p>
+        </div>
+
+        <div class="card">
+          <h3>Urgencias 24/7</h3>
+          <p>Atención inmediata ante cualquier emergencia.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-inner">
+      <div>
+        <strong>© 2025 VetNova — Cuidamos lo que más amas 🐾</strong>
+        <p>Av. Principal #123 — Tel: +57 312 456 7890</p>
+      </div>
+      <div class="footer-links">
+        <a href="#">Instagram</a>
+        <a href="#">Facebook</a>
+        <a href="#">TikTok</a>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>

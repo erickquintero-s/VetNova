@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>VetNova — Contacto</title>
+  <link rel="stylesheet" href="style.css" />
+  <script defer src="script.js"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700;800&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header class="navbar transparente" id="navbar-contact">
+    <div class="nav-inner container">
+      <div class="logo">
+        <img src="logovet.png" alt="VetNova Logo" class="logo-img">
+        <h1 class="logo-text">VetNova</h1>
+      </div>
+
+      <button class="nav-toggle" id="navToggle5" aria-label="Abrir menú">☰</button>
+
+      <nav class="nav" id="nav5">
+        <ul class="nav-links">
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="servicios.html">Servicios</a></li>
+          <li><a href="equipo.html">Equipo</a></li>
+          <li><a href="adopciones.html">Adopciones</a></li>
+          <li class="dropdown">
+            <button class="drop-btn" aria-haspopup="true" aria-expanded="false">Más ▾</button>
+            <ul class="dropdown-menu">
+              <li><a href="postulaciones.html">Trabaja con nosotros</a></li>
+              <li><a href="preguntas.html">Preguntas frecuentes</a></li>
+            </ul>
+          </li>
+          <li><a href="contacto.html" class="active btn-contacto">Contacto</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero hero-short">
+      <div class="hero-overlay"></div>
+      <div class="hero-inner container">
+        <h2 class="hero-title">Contáctanos</h2>
+        <p class="hero-sub">Estamos listos para ayudarte y resolver dudas sobre adopción y atención veterinaria.</p>
+      </div>
+    </section>
+
+    <section class="contact container">
+      <h2 class="section-title">Escríbenos</h2>
+      <form id="contactForm" class="form" novalidate>
+        <div class="form-grid">
+          <input type="text" id="name" name="name" placeholder="Nombre completo" required>
+          <input type="email" id="email" name="email" placeholder="Correo electrónico" required>
+          <input type="text" id="phone" name="phone" placeholder="Teléfono (opcional)">
+          <textarea id="message" name="message" rows="6" placeholder="Tu mensaje" required></textarea>
+        </div>
+        <div style="text-align:center; margin-top:1rem;">
+          <button class="btn primary" type="submit">Enviar mensaje</button>
+        </div>
+      </form>
+      <p id="formMsg" class="muted" style="text-align:center; margin-top:0.8rem;"></p>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-inner">
+      <div>
+        <strong>© 2025 VetNova — Cuidamos lo que más amas 🐾</strong>
+        <p>Av. Principal #123 — Tel: +57 312 456 7890</p>
+      </div>
+      <div class="footer-links">
+        <a href="#">Instagram</a>
+        <a href="#">Facebook</a>
+        <a href="#">TikTok</a>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
